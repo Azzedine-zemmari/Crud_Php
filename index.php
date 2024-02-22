@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-    include('connection.php');
+    include('./connection.php');
     ?>
     <h1 id='main_title'>CRUD APPLICATION IN PHP</h1>
     <div class="container">
@@ -30,7 +30,7 @@
             </thead>
             <tbody>
                 <?php
-                $query = "select * from `students`";
+                $query = "SELECT * FROM `students`";
                 $result = mysqli_query($connection,$query);
 
                 if(!$result){
